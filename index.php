@@ -7,3 +7,19 @@
  * 3. Uploadez ce projet sur votre serveur et testez !
  */
 // TODO Votre code ici
+
+$serveur = [
+    $_SERVER['PHP_SELF'],
+    $_SERVER['SERVER_NAME'],
+    $_SERVER['SERVER_ADDR'],
+    $_SERVER['REMOTE_ADDR'],
+    $_SERVER['HTTPS'],
+    $_SERVER['REQUEST_TIME'],
+    $_SERVER['DOCUMENT_ROOT'],
+    $_SERVER['HTTP_ACCEPT']
+];
+
+$count = count($serveur);
+for ($i = 0; $i < $serveur; $i++){
+    echo $serveur[$i];
+}
